@@ -1,50 +1,110 @@
-# React + TypeScript + Vite
+React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este template proporciona una configuración mínima para usar React con Vite, incluyendo HMR (Hot Module Replacement) y algunas reglas de ESLint para mejorar la calidad del código.
 
-Currently, two official plugins are available:
+🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Configuración rápida con Vite.
 
-## Expanding the ESLint configuration
+Soporte para TypeScript.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Dos opciones de plugins oficiales para React:
 
-- Configure the top-level `parserOptions` property like this:
+@vitejs/plugin-react: Usa Babel para Fast Refresh.
 
-```js
+@vitejs/plugin-react-swc: Usa SWC para Fast Refresh.
+
+Configuración flexible de ESLint para mantener un código limpio y consistente.
+
+📦 Instalación
+
+Para empezar con este template, clona el repositorio e instala las dependencias:
+
+npm install # o yarn install o pnpm install
+
+🚀 Inicio del Proyecto
+
+Ejecuta el servidor de desarrollo con:
+
+npm run dev # o yarn dev o pnpm dev
+
+Abre http://localhost:5173 en tu navegador para ver la aplicación en ejecución.
+
+🔧 Configuración de ESLint
+
+Si estás desarrollando una aplicación para producción, se recomienda actualizar la configuración de ESLint para habilitar reglas con verificación de tipos:
+
+Configura la propiedad parserOptions en eslint.config.js:
+
 export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
+languageOptions: {
+parserOptions: {
+project: ['./tsconfig.node.json', './tsconfig.app.json'],
+tsconfigRootDir: import.meta.dirname,
+},
+},
 })
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Reemplaza tseslint.configs.recommended por tseslint.configs.recommendedTypeChecked o tseslint.configs.strictTypeChecked.
 
-```js
-// eslint.config.js
+Opcionalmente, agrega ...tseslint.configs.stylisticTypeChecked para mejorar la coherencia del estilo.
+
+✨ Instalación de eslint-plugin-react
+
+Para mejorar la validación de React en ESLint, instala el plugin correspondiente:
+
+npm install eslint-plugin-react --save-dev
+
+Luego, actualiza eslint.config.js:
+
 import react from 'eslint-plugin-react'
 
 export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
+settings: { react: { version: '18.3' } },
+plugins: {
+react,
+},
+rules: {
+...react.configs.recommended.rules,
+...react.configs['jsx-runtime'].rules,
+},
 })
-```
+
+📄 Estructura del Proyecto
+
+📂 mi-proyecto
+├── 📁 src # Código fuente
+│ ├── 📄 main.tsx # Punto de entrada
+│ ├── 📄 App.tsx # Componente principal
+│ ├── 📁 components # Componentes reutilizables
+│ ├── 📁 assets # Recursos estáticos
+│ ├── 📁 styles # Estilos globales
+├── 📄 index.html # Archivo raíz HTML
+├── 📄 tsconfig.json # Configuración de TypeScript
+├── 📄 vite.config.ts # Configuración de Vite
+├── 📄 package.json # Dependencias y scripts
+└── 📄 README.md # Documentación
+
+🛠️ Scripts Disponibles
+
+npm run dev: Inicia el servidor de desarrollo.
+
+npm run build: Genera la versión optimizada para producción.
+
+npm run preview: Previsualiza la versión de producción.
+
+npm run lint: Ejecuta ESLint para analizar el código.
+
+🎯 Contribuciones
+
+Si deseas contribuir, por favor sigue estos pasos:
+
+Haz un fork del repositorio.
+
+Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+
+Realiza tus cambios y haz commit (git commit -m 'Añadir nueva funcionalidad').
+
+Sube los cambios a tu fork (git push origin feature/nueva-funcionalidad).
+
+Abre un pull request en el repositorio original.
