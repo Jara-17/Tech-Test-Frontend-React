@@ -1,36 +1,36 @@
-# Pepstore
+# 🐶 Pepstore
 
-Pepstore es una plantilla mínima para desarrollar aplicaciones con **React + TypeScript + Vite**, proporcionando un entorno rápido y optimizado para el desarrollo frontend.
+Pepstore es una aplicación web para la gestión de mascotas, desarrollada con **React + TypeScript + Vite**. Este proyecto es el resultado de la **prueba técnica de Aitaca** y sigue una arquitectura modular para mejorar la escalabilidad y mantenibilidad del código.
 
-## 🚀 Cómo levantar el proyecto
+## 🚀 Tecnologías utilizadas
 
-Sigue estos pasos para iniciar el proyecto en tu entorno local:
+- **Vite** para configuración rápida y desarrollo ágil.
+- **React 18** con soporte para TypeScript.
+- **Axios** para la gestión de peticiones HTTP.
+- **React Router** para la navegación entre páginas.
+- **ESLint** con reglas configuradas para mantener un código limpio y estructurado.
 
-1. **Clona el repositorio**
+## 📦 Instalación
 
-   ```sh
-   git clone https://github.com/tu-usuario/Tech-Test-Frontend-React.git
-   cd pepstore
-   ```
+Clona este repositorio e instala las dependencias:
 
-2. **Instala las dependencias**
+```bash
+git clone https://github.com/tuusuario/pepstore.git
+cd pepstore
+npm install  # o yarn install o pnpm install
+```
 
-   ```sh
-   npm install  # o yarn install o pnpm install
-   ```
+## 🚀 Levantar el Proyecto
 
-3. **Inicia el servidor de desarrollo**
+Para iniciar el servidor de desarrollo, ejecuta:
 
-   ```sh
-   npm run dev  # o yarn dev o pnpm dev
-   ```
+```bash
+npm run dev  # o yarn dev o pnpm dev
+```
 
-4. **Abre la aplicación en tu navegador**  
-   Ve a [http://localhost:5173](http://localhost:5173) para ver la aplicación en ejecución.
+Abre [http://localhost:5173](http://localhost:5173) en tu navegador para ver la aplicación en ejecución.
 
 ## 📄 Estructura del Proyecto
-
-La estructura del proyecto sigue la siguiente organización:
 
 ```
 📂 src
@@ -65,37 +65,21 @@ La estructura del proyecto sigue la siguiente organización:
 ├── main.tsx         # Punto de entrada
 ├── router.tsx       # Configuración de rutas
 ├── vite-env.d.ts    # Tipado de Vite
-
 ```
 
 ## 🛠️ Scripts Disponibles
 
-Estos son los comandos principales para manejar el proyecto:
-
-- **`npm run dev`**: Inicia el servidor de desarrollo.
-- **`npm run build`**: Genera la versión optimizada para producción.
-- **`npm run preview`**: Previsualiza la versión de producción.
-- **`npm run lint`**: Ejecuta ESLint para analizar el código.
+- `npm run dev` → Inicia el servidor de desarrollo.
+- `npm run build` → Genera la versión optimizada para producción.
+- `npm run preview` → Previsualiza la versión de producción.
+- `npm run lint` → Ejecuta ESLint para analizar el código.
 
 ## 🎯 Contribuciones
 
-Si deseas contribuir a **Pepstore**, sigue estos pasos:
+Este repositorio ha sido desarrollado como parte de la **prueba técnica de Aitaca**, pero si deseas contribuir o revisarlo, sigue estos pasos:
 
-1. Haz un fork del repositorio.
-2. Crea una nueva rama:
-   ```sh
-   git checkout -b feature/nueva-funcionalidad
-   ```
-3. Realiza tus cambios y haz commit:
-   ```sh
-   git commit -m "Añadir nueva funcionalidad"
-   ```
-4. Sube los cambios a tu fork:
-   ```sh
-   git push origin feature/nueva-funcionalidad
-   ```
+1. Haz un **fork** del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -m "Añadir nueva funcionalidad"`).
+4. Sube los cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
 5. Abre un **pull request** en el repositorio original.
-
----
-
-¡Listo! Ahora tienes todo lo necesario para comenzar a trabajar con **Pepstore** 🚀
